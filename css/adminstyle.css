@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rajdhani:wght@300&display=swap");
+*{
+	margin: 0;
+	padding: 0;
+	 box-sizing: border-box;
+}
+
+:root{
+	--bg:rgb(34, 32, 32);
+	--clr:white;
+	--prm:gold;
+}
+
+body{
+	font-family: 'Rajdhani', sans-serif;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header{
+	margin: 0 ;
+	width: 100%;
+	cursor: pointer;
+}
+	h1{
+		font-size: 2.5em;
+padding: 5px 0 0 0;
+font-family: 'Lobster';
+	}
+		sup{
+			font-size: 0.5em;
+		}
+.fashion{
+	color: rgb(235, 55, 55);
+}
+
+
+
+.sidenav-wrapper{
+	width: 100%;
+height: 100%;
+	background: var(--bg);
+}
+.sidenav{
+	height: 100%;
+	display: flex;
+		flex-direction: column;
+	align-items: center;
+}
+.sidenav h3{
+	color: var(--prm);
+	border: 2px solid var(--clr);
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.tab{
+	margin: 20px 0;
+}
+.tab a{
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.tab .white{
+color: var(--clr);
+transition: color .3s ease-in-out;
+}
+.white:hover{
+	color: var(--prm);
+}
+.tab .gold{
+	color: var(--prm);
+	transition: color .3s ease-in-out;
+}
+.gold:hover{
+	color: var(--clr);
+}
+
+.link{
+	border: 1px solid var(--prm);
+	box-shadow: 0 -1px 1px var(--prm);
+	padding: 10px;
+}
+
+
+
+@media(min-width:800px){
+	body{
+		display: flex;
+		justify-content: center;
+
+	}
+	main{
+		width: 768px;
+	}
+}
+
